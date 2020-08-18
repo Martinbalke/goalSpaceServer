@@ -1,14 +1,14 @@
 {
-  "name": "goalSpaceServer",
+  "name": "Goal-Space-Server",
   "version": "1.0.0",
   "description": "",
   "main": "Index.js",
   "scripts": {
-    "start": "nodemon Index.js --exec babel-node --presets babel-preset-env",
+    "start": "node ./model/DBserver.js --exec babel-node --presets babel-preset-env",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Martin Balke",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.11.1",
@@ -16,7 +16,7 @@
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "cors": "^2.8.5",
-    "dot-env": "0.0.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.0"
   }
