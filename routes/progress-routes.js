@@ -1,5 +1,5 @@
-import express from 'express'
-import ProgressModel from '../model/progressModel';
+const express = require('express');
+const ProgressModel = require('../model/progressModel');
 
 const router = express.Router();
 const progressModel = new ProgressModel();
@@ -30,4 +30,4 @@ router.put('/:id', async (req, res) => {
   res.send(updated);
 })
 
-export default router;
+module.exports = router;

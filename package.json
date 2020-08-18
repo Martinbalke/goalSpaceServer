@@ -4,16 +4,13 @@
   "description": "",
   "main": "Index.js",
   "scripts": {
-    "start": "node ./model/DBserver.js --exec babel-node --presets babel-preset-env",
+    "start": "node ./model/DBserver.js ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Martin Balke",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.11.1",
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

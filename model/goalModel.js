@@ -1,5 +1,5 @@
-import Model from './Model';
-import schema from './goalSchema';
+const Model = require ( './Model');
+const schema  = require('./goalSchema');
 
 
 class GoalModel extends Model {
@@ -9,4 +9,4 @@ class GoalModel extends Model {
 }
 
 
-export default GoalModel;
+module.exports =  GoalModel;

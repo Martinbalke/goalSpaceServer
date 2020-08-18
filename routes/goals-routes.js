@@ -1,5 +1,5 @@
-import express from 'express'
-import GoalModel from '../model/goalModel';
+const express = require('express');
+const GoalModel = require('../model/goalModel');
 
 const router = express.Router();
 const goalModel = new GoalModel();
@@ -30,4 +30,4 @@ router.delete('/:id', async (req, res) => {
   let deleted = await goalModel.delete(id)
   res.send(deleted);
 })
-export default router;
+module.exports = router;

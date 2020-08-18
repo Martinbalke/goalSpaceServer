@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import progressSchema from './progressSchema';
+const mongoose = require('mongoose');
+const progressSchema = require ( './progressSchema');
 
 const Schema = mongoose.Schema;
 
@@ -20,4 +20,4 @@ goalSchema.post('findOneAndDelete', async function (goal) {
 
 const goal = mongoose.model('goals', goalSchema);
 
-export default goal;
+module.exports = goal;

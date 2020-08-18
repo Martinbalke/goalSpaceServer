@@ -1,8 +1,8 @@
-import mongoose from 'mongoose';
-import express from 'express'
-import goalrouter from '../routes/goals-routes';
-import progressRouter from '../routes/progress-routes';
-import cors from 'cors';
+const mongoose = require('mongoose');
+const express = require( 'express');
+const goalrouter = require('../routes/goals-routes')
+const  progressRouter = require('../routes/progress-routes');
+const  cors  = require( 'cors');
 
 require('dotenv').config();
 
@@ -43,4 +43,4 @@ const server = {
   },
 };
 
-export default server.start();
+module.exports = server.start();

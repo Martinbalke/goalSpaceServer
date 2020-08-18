@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const progressSchema = new Schema({
@@ -16,4 +16,4 @@ progressSchema.pre('find', function (next) {
 
 
 const progress = mongoose.model('progress', progressSchema);
-export default progress;
+module.exports = progress;

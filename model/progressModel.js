@@ -1,5 +1,5 @@
-import Model from './Model';
-import schema from './progressSchema';
+const Model = require('./Model')
+const schema = require('./progressSchema');
 
 
 class ProgressModel extends Model {
@@ -15,4 +15,4 @@ class ProgressModel extends Model {
 }
 
 
-export default ProgressModel;
+module.exports = ProgressModel;
